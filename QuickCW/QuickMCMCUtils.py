@@ -184,7 +184,7 @@ def do_pt_swap(n_chain, samples, itrb, Ts, a_yes, a_no, x0s, FLIs, log_likelihoo
         FLIs_new.append(FLIs[swap_map[j]])
         x0s_new.append(x0s[swap_map[j]])
 
-    samples_new = samples
+    samples = samples_new
     log_likelihood = log_likelihood_new
     fisher_diag[:] = fisher_diag_new
     FLIs[:] = List(FLIs_new)
